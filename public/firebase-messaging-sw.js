@@ -5,13 +5,13 @@ importScripts(
 
 // Replace these with your own Firebase config keys...
 const firebaseConfig = {
-  apiKey: null,
-  authDomain: null,
-  projectId: null,
-  storageBucket: null,
-  messagingSenderId: null,
-  appId: null,
-  measurementId: null,
+  apiKey: "AIzaSyBBivd0UUZmQqu3ZlOcpwqWaOl2BJK3lwU",
+  authDomain: "nextjs-notification-51cb0.firebaseapp.com",
+  projectId: "nextjs-notification-51cb0",
+  storageBucket: "nextjs-notification-51cb0.firebasestorage.app",
+  messagingSenderId: "636915540044",
+  appId: "1:636915540044:web:9f520f37016cae05a194e9",
+  measurementId: "G-P8BHP5MQG1"
 };
 
 firebase.initializeApp(firebaseConfig);
