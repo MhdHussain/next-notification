@@ -64,6 +64,8 @@ jobs:
       - name: Set up service key
         run: |
           echo "${{ secrets.SERVICE_KEY }}" > service_key.json
+        with:
+          path: ./service_key.json
         env:
           SERVICE_KEY_JSON: ${{ secrets.SERVICE_KEY }}
       - name: Restore cache
