@@ -61,6 +61,11 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Set up service key
+        run: |
+          echo "${{ secrets.SERVICE_KEY }}" > service_key.json
+        env:
+          SERVICE_KEY_JSON: ${{ secrets.SERVICE_KEY }}
       - name: Restore cache
         uses: actions/cache@v4
         with:
